@@ -1,0 +1,371 @@
+/* Enhanced Overrides for Existing Doxygen Styles */
+/* This file adds modern styling on top of the existing custom.css */
+
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Override body styling with modern approach */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a content wrapper for better layout */
+#top {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  min-height: 100vh;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced title area with modern styling */
+#titlearea:not([style*="display: none"]) {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+  border-bottom: none !important;
+  padding: 2rem 0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+#titlearea:not([style*="display: none"]) table {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#projectname {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  margin: 0 !important;
+}
+
+#projectnumber {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 20px !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  margin-left: 1rem !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#projectbrief {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.125rem !important;
+  font-weight: 300 !important;
+  margin: 0.5rem 0 0 0 !important;
+  line-height: 1.4 !important;
+}
+
+#projectlogo img {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  height: 64px !important;
+  width: auto !important;
+}
+
+/* Enhanced search styling */
+#MSearchBox {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 25px !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#MSearchField {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.875rem !important;
+}
+
+#MSearchField::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Modern content area styling */
+.contents {
+  background: white;
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Enhanced navigation tabs */
+.tablist {
+  background: linear-gradient(90deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  border: none !important;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  display: flex;
+  gap: 2px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tablist li {
+  background: none !important;
+  border: none !important;
+  margin: 0 !important;
+  border-radius: 8px 8px 0 0 !important;
+  overflow: hidden;
+}
+
+.tablist li a {
+  background: transparent !important;
+  color: #64748b !important;
+  border: none !important;
+  padding: 0.875rem 1.5rem !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+  display: block;
+}
+
+.tablist li.current a,
+.tablist li a:hover {
+  background: white !important;
+  color: #2563eb !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15) !important;
+  transform: translateY(-1px);
+}
+
+/* Enhanced code blocks */
+.fragment {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.fragment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+pre.fragment {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+/* Enhanced member documentation */
+.memitem {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  margin: 1.5rem 0 !important;
+  overflow: hidden;
+}
+
+.memproto {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 1rem 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.memdoc {
+  background: white !important;
+  border: none !important;
+  padding: 1.5rem !important;
+  border-radius: 0 0 12px 12px !important;
+  box-shadow: none !important;
+}
+
+.memname {
+  color: #2563eb !important;
+  font-weight: 600 !important;
+}
+
+/* Enhanced tables */
+table.memberdecls,
+table.fieldtable {
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  background: white !important;
+}
+
+.fieldtable th,
+.memberdecls th {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+  color: #334155 !important;
+  font-weight: 600 !important;
+  padding: 1rem !important;
+  font-size: 0.875rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.fieldtable td,
+.memberdecls td {
+  padding: 0.875rem 1rem !important;
+  border-color: #f1f5f9 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Enhanced alert boxes */
+dl.note {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%) !important;
+  border-left: 4px solid #2563eb !important;
+  border-radius: 8px !important;
+  color: #1e40af !important;
+}
+
+dl.warning,
+dl.attention {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%) !important;
+  border-left: 4px solid #d97706 !important;
+  border-radius: 8px !important;
+  color: #92400e !important;
+}
+
+dl.bug {
+  background: linear-gradient(135deg, #fecaca 0%, #fca5a5 100%) !important;
+  border-left: 4px solid #dc2626 !important;
+  border-radius: 8px !important;
+  color: #991b1b !important;
+}
+
+dl.todo {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%) !important;
+  border-left: 4px solid #059669 !important;
+  border-radius: 8px !important;
+  color: #065f46 !important;
+}
+
+/* Enhanced typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  line-height: 1.2 !important;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 2rem 0 1rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+  color: #2563eb !important;
+  margin: 2rem 0 1rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  color: #475569 !important;
+  margin: 1.5rem 0 0.75rem !important;
+}
+
+/* Enhanced links */
+a {
+  color: #2563eb !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+a:hover {
+  color: #1d4ed8 !important;
+  text-decoration: none !important;
+  background: linear-gradient(to bottom, transparent 0, transparent calc(100% - 2px), #2563eb 100%) !important;
+}
+
+/* Enhanced directory/file listings */
+.directory {
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  background: white !important;
+}
+
+.directory .even {
+  background: #f8fafc !important;
+}
+
+.directory .odd {
+  background: white !important;
+}
+
+.directory td {
+  padding: 0.75rem 1rem !important;
+  font-size: 0.875rem !important;
+  border-color: #f1f5f9 !important;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  #projectname {
+    font-size: 1.875rem !important;
+  }
+  
+  #projectnumber {
+    display: block !important;
+    margin: 0.5rem 0 0 0 !important;
+    width: fit-content;
+  }
+  
+  .contents {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+  
+  .tablist {
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .tablist li a {
+    padding: 0.75rem 1rem !important;
+  }
+}
+
+/* Smooth animations */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Enhanced focus states for accessibility */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #2563eb !important;
+  outline-offset: 2px !important;
+  border-radius: 4px;
+}

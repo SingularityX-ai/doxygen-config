@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Modern API Documentation - Professional API Documentation" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Comprehensive API documentation and developer resources for Modern API Documentation. Explore our elegant, modern documentation interface." />
+<meta property="og:url" content="https://example.com" />
+<meta property="og:type" content="website" />
+<!-- END opengraph metadata -->
+
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Modern API Documentation - Professional API Documentation" />
+<meta name="twitter:description" content="Comprehensive API documentation and developer resources for Modern API Documentation. Explore our elegant, modern documentation interface." />
+<!-- END twitter metadata -->
+
+<title>Modern API Documentation Demo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    // Mock functions for demo
+    function init() {}
+    window.DoxygenAwesomeFragmentCopyButton = { init: init };
+    window.DoxygenAwesomeDarkModeToggle = { init: init };
+    window.DoxygenAwesomeParagraphLink = { init: init };
+    window.DoxygenAwesomeInteractiveToc = { init: init };
+    window.DoxygenAwesomeTabs = { init: init };
+    
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="custom.css" rel="stylesheet" type="text/css" />
+<link href="modern-doxygen-theme.css" rel="stylesheet" type="text/css" />
+<link href="enhanced-doxygen-overrides.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!-- GitHub corner -->
+<a href="https://github.com/example/repo" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+<div id="top">
+
+<!-- Modern Navigation Bar -->
+<nav class="top-navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <div class="brand-logo">
+        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 16px;">API</div>
+      </div>
+      <div class="brand-content">
+        <h1 class="brand-title">Modern API Documentation
+          <span class="version-badge">v2.1.0</span>
+        </h1>
+        <p class="brand-subtitle">Elegant, comprehensive developer resources and API reference</p>
+      </div>
+    </div>
+    
+    <div class="navbar-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search documentation..." style="padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 20px; font-size: 14px; width: 200px;">
+      </div>
+      
+      <!-- Call to Action Buttons -->
+      <div class="cta-buttons">
+        <a href="#getting-started" class="btn btn-primary">Get Started</a>
+        <a href="#api-reference" class="btn btn-secondary">API Reference</a>
+        <a href="https://github.com/example/repo" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Content Area -->
+<div class="contents">
+
+<!-- Hero Section -->
+<div style="text-align: center; padding: 3rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 16px; margin-bottom: 2rem;">
+  <h1>Welcome to Modern API Documentation</h1>
+  <p style="font-size: 1.25rem; color: #64748b; margin: 1rem 0 2rem;">
+    Experience the future of developer documentation with our elegant, intuitive interface
+  </p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="#quick-start" class="btn btn-primary" style="text-decoration: none;">Quick Start Guide</a>
+    <a href="#examples" class="btn btn-outline" style="text-decoration: none;">View Examples</a>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<h2>Key Features</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+  
+  <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="color: #2563eb; margin-top: 0;">🚀 Modern Design</h3>
+    <p>Clean, intuitive interface with modern design principles and responsive layout that works on all devices.</p>
+  </div>
+  
+  <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="color: #2563eb; margin-top: 0;">📖 Comprehensive</h3>
+    <p>Complete API reference with detailed examples, parameters, and return values for every endpoint.</p>
+  </div>
+  
+  <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="color: #2563eb; margin-top: 0;">⚡ Fast Search</h3>
+    <p>Lightning-fast search functionality to quickly find the information you need.</p>
+  </div>
+  
+</div>
+
+<!-- Code Example -->
+<h2>Quick Start Example</h2>
+<p>Get started with our API in just a few lines of code:</p>
+
+<div class="fragment">
+<pre class="fragment">
+<code class="language-javascript">// Initialize the API client
+const apiClient = new ModernAPI({
+  apiKey: 'your-api-key',
+  baseURL: 'https://api.example.com/v1'
+});
+
+// Make your first API call
+const response = await apiClient.users.getProfile({
+  userId: '12345'
+});
+
+console.log('User profile:', response.data);
+</code>
+</pre>
+</div>
+
+<!-- Documentation Sections -->
+<h2>Documentation Sections</h2>
+
+<!-- Navigation Tabs -->
+<div class="tablist">
+  <li class="current"><a href="#overview">Overview</a></li>
+  <li><a href="#authentication">Authentication</a></li>
+  <li><a href="#endpoints">Endpoints</a></li>
+  <li><a href="#examples">Examples</a></li>
+</div>
+
+<!-- Member Documentation Example -->
+<div class="memitem">
+  <div class="memproto">
+    <div class="memname">
+      <strong>getUserProfile</strong>(userId: string): Promise&lt;UserProfile&gt;
+    </div>
+  </div>
+  <div class="memdoc">
+    <p>Retrieves a user's profile information by their unique identifier.</p>
+    
+    <h4>Parameters</h4>
+    <table class="fieldtable">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>userId</td>
+        <td>string</td>
+        <td>The unique identifier for the user</td>
+      </tr>
+    </table>
+    
+    <h4>Returns</h4>
+    <p>A Promise that resolves to a UserProfile object containing user information.</p>
+    
+    <div class="fragment">
+      <pre class="fragment">
+<code class="language-javascript">// Example usage
+const profile = await api.getUserProfile('user-123');
+console.log(profile.name); // "John Doe"
+</code>
+      </pre>
+    </div>
+  </div>
+</div>
+
+<!-- Alert Examples -->
+<dl class="note">
+  <dt>Note</dt>
+  <dd>This API requires authentication. Make sure to include your API key in all requests.</dd>
+</dl>
+
+<dl class="warning">
+  <dt>Warning</dt>
+  <dd>Rate limiting is enforced. You can make up to 1000 requests per hour.</dd>
+</dl>
+
+<dl class="todo">
+  <dt>Coming Soon</dt>
+  <dd>WebSocket support for real-time updates will be available in version 3.0.</dd>
+</dl>
+
+</div>
+
+<!-- Modern Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">Documentation</h3>
+        <ul class="footer-links">
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#api-reference">API Reference</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Resources</h3>
+        <ul class="footer-links">
+          <li><a href="#changelog">Changelog</a></li>
+          <li><a href="#contributing">Contributing</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#license">License</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Connect</h3>
+        <ul class="footer-links">
+          <li><a href="https://github.com/example/repo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="#issues">Issues</a></li>
+          <li><a href="#discussions">Discussions</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-cta">
+        <h3 class="footer-title">Ready to get started?</h3>
+        <p class="footer-description">Join thousands of developers using our documentation platform.</p>
+        <div class="footer-buttons">
+          <a href="#download" class="btn btn-primary">Download SDK</a>
+          <a href="#documentation" class="btn btn-outline">View Docs</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <small class="footer-credits">
+          Generated by 
+          <a href="https://www.doxygen.org/" target="_blank" rel="noopener noreferrer" class="footer-link">
+            <img class="footer" src="https://www.doxygen.org/images/doxygen.svg" width="80" height="24" alt="Powered by Doxygen" style="vertical-align: middle;"/>
+          </a>
+        </small>
+        <small class="footer-copyright">
+          &copy; 2024 Modern API Documentation. All rights reserved.
+        </small>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Twitter" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/example/repo" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
